@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Calendar, MapPin, Mountain, Star, Users, ArrowRight } from 'lucide-react';
 import { formatPKR } from '../utils/formatters.js';
 import { HIGH_ALTITUDE_THRESHOLD_METERS } from '../utils/pricingRules.js';
+import '../styles/tours.css';
 
 export default function TourCard({ tour }) {
   const [imageError, setImageError] = useState(false);

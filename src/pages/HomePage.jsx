@@ -5,6 +5,7 @@ import TourCard from '../components/TourCard.jsx';
 import { TOURS_DATA } from '../data/toursData.js';
 import { REVIEWS_DATA } from '../data/reviewsData.js';
 import '../styles/home.css';
+import '../styles/tours.css';
 
 export default function HomePage() {
   const featuredTours = TOURS_DATA.slice(0, 3);
