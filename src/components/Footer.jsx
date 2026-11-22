@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Heart, Shield } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#0f172a', color: '#94a3b8', marginTop: 'auto', borderTop: '1px solid #1e293b' }}>
+    <footer style={{ background: '#0f172a', color: '#94a3b8', marginTop: 'auto', borderTop: '1px solid #1e293b', width: '100%', maxWidth: '100%', overflowX: 'hidden', boxSizing: 'border-box' }}>
       <div className="container" style={{ padding: '3.5rem 1.25rem 2rem' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '2.5rem', marginBottom: '2.5rem' }}>
           

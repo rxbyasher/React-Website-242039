@@ -6,6 +6,9 @@
   top: 0;
   z-index: 100;
   box-shadow: var(--shadow-sm);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .nav-container {

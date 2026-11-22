@@ -63,18 +63,26 @@ html {
   line-height: 1.6;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 /* Typography */
@@ -288,32 +296,38 @@ h1, h2, h3, h4, h5, h6 {
 .demo-toolbar {
   background: #111827;
   color: #f3f4f6;
-  font-size: 0.82rem;
-  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  padding: 0.45rem 1.25rem;
   border-bottom: 1px solid #374151;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
+  justify-content: flex-end;
   position: sticky;
   top: 0;
   z-index: 1000;
-}
-
-.demo-toolbar-title {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-weight: 700;
-  color: #34d399;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .demo-toolbar-controls {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .demo-toolbar {
+    justify-content: center;
+    padding: 0.4rem 0.5rem;
+  }
+  .demo-toolbar-controls {
+    gap: 0.6rem;
+    font-size: 0.74rem;
+    justify-content: center;
+  }
 }
 
 .demo-toggle-label {
@@ -369,8 +383,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Responsive Grid */
 .grid-1 { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
-.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
-.grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.75rem; }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.75rem; }
 
 /* Utilities */
 .text-center { text-align: center; }

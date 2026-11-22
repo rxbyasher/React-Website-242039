@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { tourService } from '../services/tourService.js';
 import { storage } from '../utils/storage.js';
-import { Bug, RefreshCw, Trash2, ShieldCheck } from 'lucide-react';
+import { Trash2 } from 'lucide-react';
 
 export default function DemoToolbar({ onStateChange }) {
   const [config, setConfig] = useState(tourService.getDemoConfig());
@@ -29,12 +29,7 @@ export default function DemoToolbar({ onStateChange }) {
   };
 
   return (
-    <aside className="demo-toolbar" aria-label="Examiner Edge Case & Testing Bar">
-      <div className="demo-toolbar-title">
-        <Bug size={16} aria-hidden="true" />
-        <span>FAST NUCES Viva / Demo Testing Controls (Task 6.1)</span>
-      </div>
-
+    <aside className="demo-toolbar" aria-label="Demo Testing Controls">
       <div className="demo-toolbar-controls">
         <label className="demo-toggle-label">
           <input
@@ -42,7 +37,7 @@ export default function DemoToolbar({ onStateChange }) {
             checked={config.forceError}
             onChange={handleToggleError}
           />
-          <span>Simulate Network Failure (FR14)</span>
+          <span>Simulate Network Failure</span>
         </label>
 
         <label className="demo-toggle-label">
@@ -51,24 +46,26 @@ export default function DemoToolbar({ onStateChange }) {
             checked={config.forceSoldOut}
             onChange={handleToggleSoldOut}
           />
-          <span>Simulate Sold-Out Seats (FR12)</span>
+          <span>Simulate Sold-Out Seats</span>
         </label>
 
         <button
           type="button"
           onClick={handleClearDraft}
           className="btn btn-secondary btn-sm"
-          style={{ padding: '0.2rem 0.5rem', fontSize: '0.75rem', background: '#374151', color: '#f9fafb', borderColor: '#4b5563' }}
+          style={{
+            padding: '0.2rem 0.65rem',
+            fontSize: '0.75rem',
+            background: '#374151',
+            color: '#f9fafb',
+            borderColor: '#4b5563',
+            borderRadius: 'var(--radius-sm)'
+          }}
           title="Clears localStorage booking draft to test fresh state"
         >
           <Trash2 size={12} aria-hidden="true" />
           <span>{clearedNotice ? 'Draft Cleared!' : 'Clear Saved Draft'}</span>
         </button>
-
-        <span className="badge badge-primary" style={{ fontSize: '0.7rem', padding: '0.2rem 0.5rem' }}>
-          <ShieldCheck size={12} aria-hidden="true" />
-          Node Built-in Test Verified
-        </span>
       </div>
     </aside>
   );
