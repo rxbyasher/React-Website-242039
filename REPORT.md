@@ -18,7 +18,6 @@
 | **Business Domain** | Tourism, Adventure Expeditions & Group Travel Planning |
 | **Public GitHub Repository** | `https://github.com/rxbyasher/React-Website-242039` |
 | **Live Deployed Website** | `https://react-website-242039.vercel.app/` |
-| **Final Commit Hash** | `b797c4c` |
 
 ---
 
