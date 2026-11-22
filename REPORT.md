@@ -11,9 +11,9 @@
 
 | Field | Detail |
 | :--- | :--- |
-| **Student Name** | [Insert Your Name, e.g., Ali Ahmad] |
-| **Roll Number** | [Insert Roll Number, e.g., 22I-XXXX] |
-| **Section** | [Insert Section, e.g., BCS-5A] |
+| **Student Name** | Ramla Shamsher |
+| **Roll Number** | 24I-2039 |
+| **Section** | CY-5C |
 | **Business Name** | پاکستان کی سیر (Pakistan ki Sair) |
 | **Business Domain** | Tourism, Adventure Expeditions & Group Travel Planning |
 | **Public GitHub Repository** | `https://github.com/your-username/pakistan-ki-sair` *(Replace with your link)* |

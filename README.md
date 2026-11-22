@@ -7,9 +7,9 @@
 ---
 
 ## Student & Submission Details
-- **Student Name:** [Your Full Name Here]
-- **Roll Number:** [Your Roll Number Here, e.g., 22I-XXXX]
-- **Section:** [Your Section, e.g., BCS-5A]
+- **Student Name:** Ramla Shamsher
+- **Roll Number:** 24I-2039
+- **Section:** CY-5C
 - **Business Name:** پاکستان کی سیر (Pakistan ki Sair)
 - **GitHub Repository:** [Public GitHub Repository Link]
 - **Live Deployed Application:** [Deployed Vercel / Netlify Link]
